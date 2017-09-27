@@ -1,0 +1,8 @@
+test122121.MainActivity, test122121;md5cbbc78d1e3a3c208a0bfde14a07332c0.MainActivity
+test122121.MainActivity, test122121, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5cbbc78d1e3a3c208a0bfde14a07332c0.MainActivity
+test122121.MainActivity;md5cbbc78d1e3a3c208a0bfde14a07332c0.MainActivity
+test122121.MainActivity;md5cbbc78d1e3a3c208a0bfde14a07332c0.MainActivity
+test122121.VehicleAdapter, test122121;md5cbbc78d1e3a3c208a0bfde14a07332c0.VehicleAdapter
+test122121.VehicleAdapter, test122121, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5cbbc78d1e3a3c208a0bfde14a07332c0.VehicleAdapter
+test122121.VehicleAdapter;md5cbbc78d1e3a3c208a0bfde14a07332c0.VehicleAdapter
+test122121.VehicleAdapter;md5cbbc78d1e3a3c208a0bfde14a07332c0.VehicleAdapter
