@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="250dp" />
+    <Button
+        android:id="@+id/btnEmotion"
+        android:text="Emotion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <TextView
+            android:id="@+id/tv_1"
+            android:text="Gender"
+            android:layout_weight="0.3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/tvGender"
+            android:text=""
+            android:layout_weight="0.7"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+      <TextView
+          android:id="@+id/tv_2"
+          android:text="Age"
+          android:layout_weight="0.3"
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent" />
+      <TextView
+          android:id="@+id/tvAge"
+          android:text=""
+          android:layout_weight="0.7"
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+      <TextView
+          android:id="@+id/tv_3"
+          android:text="Emotion"
+          android:layout_weight="0.3"
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent" />
+      <TextView
+          android:id="@+id/tvAge"
+          android:text=""
+          android:layout_weight="0.7"
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+      <TextView
+          android:id="@+id/tv_4"
+          android:text="Do"
+          android:layout_weight="0.3"
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent" />
+      <TextView
+          android:id="@+id/tvText"
+          android:text=""
+          android:layout_weight="0.7"
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent" />
+    </LinearLayout>
+</LinearLayout>

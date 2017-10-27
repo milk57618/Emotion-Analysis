@@ -1,2 +1,0 @@
-android.app.Application
-test122121.test122121
