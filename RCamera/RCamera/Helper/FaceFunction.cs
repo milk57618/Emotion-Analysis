@@ -23,7 +23,7 @@ namespace RCamera.Helper
             paint.AntiAlias = true;
             paint.SetStyle(Paint.Style.Stroke);
             paint.Color = Color.White;
-            paint.StrokeWidth = 10;
+            paint.StrokeWidth = 2;
 
             foreach (var face in faces)
             {
@@ -39,7 +39,7 @@ namespace RCamera.Helper
         /// </summary>
         /// <param name="faces"></param>
         /// <param name="mainActivity"></param>
-        public static void setImageOutput(List<FaceModel> faces, MainActivity mainActivity)
+        public static void setImageOutput(List<FaceModel> faces, CognitiveActivity cognitiveActivity)
         {
             List<FaceModel> FM = new List<FaceModel>();
 
@@ -58,8 +58,18 @@ namespace RCamera.Helper
                 }
             }
 
-            mainActivity.tvGender.Text = faceMax.faceAttributes.Gender;
-            mainActivity.tvAge.Text = faceMax.faceAttributes.Age.ToString();
+            string gender="";
+            if (faceMax.faceAttributes.Gender == "female" || faceMax.faceAttributes.Gender == "Female" || faceMax.faceAttributes.Gender == "FEMALE")
+            {
+                gender = "여자";
+            }
+            else
+            {
+                gender = "남자";
+            }
+            int age =(int)faceMax.faceAttributes.Age;
+            cognitiveActivity.tvGender.Text =gender;
+            cognitiveActivity.tvAge.Text = age.ToString();
         }
     }
 }

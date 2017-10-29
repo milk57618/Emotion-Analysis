@@ -24,11 +24,11 @@ public class VisionTask
 			mono.android.TypeManager.Activate ("RCamera.VisionTask, RCamera, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
 	}
 
-	public VisionTask (md525ecff11cf9568dc168267811841dc5c.MainActivity p0) throws java.lang.Throwable
+	public VisionTask (md525ecff11cf9568dc168267811841dc5c.CognitiveActivity p0) throws java.lang.Throwable
 	{
 		super ();
 		if (getClass () == VisionTask.class)
-			mono.android.TypeManager.Activate ("RCamera.VisionTask, RCamera, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "RCamera.MainActivity, RCamera, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", this, new java.lang.Object[] { p0 });
+			mono.android.TypeManager.Activate ("RCamera.VisionTask, RCamera, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "RCamera.CognitiveActivity, RCamera, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", this, new java.lang.Object[] { p0 });
 	}
 
 

@@ -24,11 +24,6 @@ C:\Users\milk5\Desktop\RCamera\RCamera\obj\Debug\android\bin\RCamera.RCamera.apk
 C:\Users\milk5\Desktop\RCamera\RCamera\obj\Debug\res\layout\imageoutput.xml
 C:\Users\milk5\Desktop\RCamera\RCamera\obj\Debug\res\layout\main.xml
 C:\Users\milk5\Desktop\RCamera\RCamera\obj\Debug\res\values\strings.xml
-C:\Users\milk5\Desktop\RCamera\RCamera\obj\Debug\res\drawable\baby.jpg
-C:\Users\milk5\Desktop\RCamera\RCamera\obj\Debug\res\drawable\yunzi.jpg
-C:\Users\milk5\Desktop\RCamera\RCamera\obj\Debug\res\drawable\kimyoung.jpeg
-C:\Users\milk5\Desktop\RCamera\RCamera\obj\Debug\res\drawable\woo.jpeg
-C:\Users\milk5\Desktop\RCamera\RCamera\obj\Debug\res\drawable\kim.jpg
 C:\Users\milk5\Desktop\RCamera\RCamera\obj\Debug\R.cs.flag
 C:\Users\milk5\Desktop\RCamera\RCamera\obj\Debug\uploadflags.txt
 C:\Users\milk5\Desktop\RCamera\RCamera\bin\Debug\RCamera.dll.config
@@ -41,4 +36,3 @@ C:\Users\milk5\Desktop\RCamera\RCamera\bin\Debug\System.Net.Http.Extensions.xml
 C:\Users\milk5\Desktop\RCamera\RCamera\bin\Debug\System.Net.Http.Primitives.xml
 C:\Users\milk5\Desktop\RCamera\RCamera\bin\Debug\RCamera.dll.mdb
 C:\Users\milk5\Desktop\RCamera\RCamera\obj\Debug\android\assets\RCamera.dll.mdb
-C:\Users\milk5\Desktop\RCamera\RCamera\obj\Debug\res\drawable\yunzi2.jpg

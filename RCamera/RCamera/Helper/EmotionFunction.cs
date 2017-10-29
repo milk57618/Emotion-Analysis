@@ -47,21 +47,21 @@ namespace RCamera.Helper
             double maxElementInList = listSorted[listSorted.Count - 1];
 
             if (maxElementInList == sc.anger)
-                return "Anger";
+                return "화남";
             else if (maxElementInList == sc.happiness)
-                return "Happy";
+                return "행복";
             else if (maxElementInList == sc.contempt)
-                return "Contempt";
+                return "경멸";
             else if (maxElementInList == sc.sadness)
-                return "Sad";
+                return "슬픔";
             else if (maxElementInList == sc.fear)
-                return "Fear";
+                return "무서움";
             else if (maxElementInList == sc.surprise)
-                return "Surprise";
+                return "놀람";
             else if (maxElementInList == sc.disgust)
-                return "Disgust";
+                return "역겨움";
             else
-                return "Neutral";
+                return "중립";
         }
         
         /// <summary>

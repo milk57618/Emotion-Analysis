@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="RCamera.RCamera" android:versionCode="1" android:versionName="1.0" android:installLocation="preferExternal">
-	<uses-sdk android:minSdkVersion="21" />
+	<uses-sdk />
 	<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
 	<uses-permission android:name="android.permission.INTERNET" />
 	<uses-permission android:name="android.permission.WRITE_SETTINGS" />
 	<application android:allowBackup="true" android:label="@string/app_name"></application>
+	<activity android:name="CognitiveActivity" />
+	<activity android:name="MainActivity" />
 </manifest>

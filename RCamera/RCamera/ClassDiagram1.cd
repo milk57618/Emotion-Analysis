@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="RCamera.CognitiveActivity">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABgAAAAAAEAAAAAAEAAEACAEIAAAAAAQAAAQAAA=</HashCode>
+      <FileName>CognitiveActivity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RCamera.MainActivity">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>MainActivity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RCamera.Resource">
+    <Position X="1" Y="5.5" Width="1.5" />
+    <NestedTypes>
+      <Class Name="RCamera.Resource.Integer" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="RCamera.Resource.Color" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="RCamera.Resource.Dimension" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="RCamera.Resource.Styleable" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="RCamera.Resource.Boolean" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="RCamera.Resource.String" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="RCamera.Resource.Drawable" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="RCamera.Resource.Layout" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="RCamera.Resource.Style" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="RCamera.Resource.Animation" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="RCamera.Resource.Attribute" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="RCamera.Resource.Id" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RCamera.CogTask.EmotionTask">
+    <Position X="4.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAKgAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>CogTask\EmotionTask.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RCamera.CogTask.FaceTask">
+    <Position X="10" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAoAAAAAAAAAAAAAEAAAAAAEAAEAAAABAAAQ=</HashCode>
+      <FileName>CogTask\FaceTask.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RCamera.CogTask.VisionTask">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAgAAAAAAAAAAAAAAAAAAAAAAAEACAACAAAA=</HashCode>
+      <FileName>CogTask\VisionTask.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RCamera.Helper.EmotionFunction">
+    <Position X="4.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAACAAAAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helper\EmotionFunction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RCamera.Helper.FaceFunction">
+    <Position X="10.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helper\FaceFunction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RCamera.Helper.VisionFunction" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helper\VisionFunction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RCamera.Model.EmotionModel">
+    <Position X="6" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Emotion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RCamera.Model.EFaceRectangle">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAQAAAAAgAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Emotion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RCamera.Model.EScores">
+    <Position X="7.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAABEAAAAIAAACBAAAgAAAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>Model\Emotion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RCamera.Model.FaceRectangle">
+    <Position X="11" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAQAAAAAgAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Face.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RCamera.Model.FacialHair">
+    <Position X="10.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAQACAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Face.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RCamera.Model.HeadPose">
+    <Position X="11" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAgAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Face.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RCamera.Model.FaceAttributes">
+    <Position X="11.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAACAAEAAAAAAAAAAAAAAEAAAICAAAAA=</HashCode>
+      <FileName>Model\Face.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RCamera.Model.FaceModel">
+    <Position X="9.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAgAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Face.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RCamera.Model.VisionModel" Collapsed="true">
+    <Position X="3" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAQAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Vision.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RCamera.Model.Caption">
+    <Position X="4" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Vision.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RCamera.Model.Description" Collapsed="true">
+    <Position X="2.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAABAAAAAAAA=</HashCode>
+      <FileName>Model\Vision.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RCamera.Model.Metadata">
+    <Position X="2.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAQAAACAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Vision.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="맑은 고딕" Size="9" />
+</ClassDiagram>

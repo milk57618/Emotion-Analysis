@@ -1,19 +1,23 @@
-RCamera.EmotionTask, RCamera;md525ecff11cf9568dc168267811841dc5c.EmotionTask
-RCamera.EmotionTask, RCamera, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md525ecff11cf9568dc168267811841dc5c.EmotionTask
-RCamera.EmotionTask;md525ecff11cf9568dc168267811841dc5c.EmotionTask
-rcamera.EmotionTask;md525ecff11cf9568dc168267811841dc5c.EmotionTask
-RCamera.FaceTask, RCamera;md525ecff11cf9568dc168267811841dc5c.FaceTask
-RCamera.FaceTask, RCamera, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md525ecff11cf9568dc168267811841dc5c.FaceTask
-RCamera.FaceTask;md525ecff11cf9568dc168267811841dc5c.FaceTask
-rcamera.FaceTask;md525ecff11cf9568dc168267811841dc5c.FaceTask
+RCamera.CognitiveActivity, RCamera;md525ecff11cf9568dc168267811841dc5c.CognitiveActivity
+RCamera.CognitiveActivity, RCamera, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md525ecff11cf9568dc168267811841dc5c.CognitiveActivity
+RCamera.CognitiveActivity;md525ecff11cf9568dc168267811841dc5c.CognitiveActivity
+rcamera.CognitiveActivity;md525ecff11cf9568dc168267811841dc5c.CognitiveActivity
 RCamera.MainActivity, RCamera;md525ecff11cf9568dc168267811841dc5c.MainActivity
 RCamera.MainActivity, RCamera, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md525ecff11cf9568dc168267811841dc5c.MainActivity
 RCamera.MainActivity;md525ecff11cf9568dc168267811841dc5c.MainActivity
 rcamera.MainActivity;md525ecff11cf9568dc168267811841dc5c.MainActivity
-RCamera.VisionTask, RCamera;md525ecff11cf9568dc168267811841dc5c.VisionTask
-RCamera.VisionTask, RCamera, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md525ecff11cf9568dc168267811841dc5c.VisionTask
-RCamera.VisionTask;md525ecff11cf9568dc168267811841dc5c.VisionTask
-rcamera.VisionTask;md525ecff11cf9568dc168267811841dc5c.VisionTask
+RCamera.CogTask.EmotionTask, RCamera;md5dbbc66a9928d2cd78d3ad151435b212a.EmotionTask
+RCamera.CogTask.EmotionTask, RCamera, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5dbbc66a9928d2cd78d3ad151435b212a.EmotionTask
+RCamera.CogTask.EmotionTask;md5dbbc66a9928d2cd78d3ad151435b212a.EmotionTask
+rcamera.cogtask.EmotionTask;md5dbbc66a9928d2cd78d3ad151435b212a.EmotionTask
+RCamera.CogTask.FaceTask, RCamera;md5dbbc66a9928d2cd78d3ad151435b212a.FaceTask
+RCamera.CogTask.FaceTask, RCamera, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5dbbc66a9928d2cd78d3ad151435b212a.FaceTask
+RCamera.CogTask.FaceTask;md5dbbc66a9928d2cd78d3ad151435b212a.FaceTask
+rcamera.cogtask.FaceTask;md5dbbc66a9928d2cd78d3ad151435b212a.FaceTask
+RCamera.CogTask.VisionTask, RCamera;md5dbbc66a9928d2cd78d3ad151435b212a.VisionTask
+RCamera.CogTask.VisionTask, RCamera, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5dbbc66a9928d2cd78d3ad151435b212a.VisionTask
+RCamera.CogTask.VisionTask;md5dbbc66a9928d2cd78d3ad151435b212a.VisionTask
+rcamera.cogtask.VisionTask;md5dbbc66a9928d2cd78d3ad151435b212a.VisionTask
 Android.Support.V4.App.SharedElementCallback/IOnSharedElementsReadyListenerImplementor, Xamarin.Android.Support.Compat;mono.android.support.v4.app.SharedElementCallback_OnSharedElementsReadyListenerImplementor
 Android.Support.V4.App.SharedElementCallback+IOnSharedElementsReadyListenerImplementor, Xamarin.Android.Support.Compat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.android.support.v4.app.SharedElementCallback_OnSharedElementsReadyListenerImplementor
 Android.Support.V4.App.SharedElementCallback.IOnSharedElementsReadyListenerImplementor;mono.android.support.v4.app.SharedElementCallback_OnSharedElementsReadyListenerImplementor

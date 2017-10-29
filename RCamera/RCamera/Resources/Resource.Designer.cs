@@ -1540,25 +1540,7 @@ namespace RCamera
 			public const int abc_vector_test = 2130837586;
 			
 			// aapt resource value: 0x7f020053
-			public const int baby = 2130837587;
-			
-			// aapt resource value: 0x7f020054
-			public const int Kim = 2130837588;
-			
-			// aapt resource value: 0x7f020055
-			public const int kimyoung = 2130837589;
-			
-			// aapt resource value: 0x7f020059
-			public const int notification_template_icon_bg = 2130837593;
-			
-			// aapt resource value: 0x7f020056
-			public const int woo = 2130837590;
-			
-			// aapt resource value: 0x7f020057
-			public const int yunzi = 2130837591;
-			
-			// aapt resource value: 0x7f020058
-			public const int yunzi2 = 2130837592;
+			public const int notification_template_icon_bg = 2130837587;
 			
 			static Drawable()
 			{
@@ -1573,8 +1555,8 @@ namespace RCamera
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f0a005f
-			public const int action0 = 2131361887;
+			// aapt resource value: 0x7f0a0060
+			public const int action0 = 2131361888;
 			
 			// aapt resource value: 0x7f0a0045
 			public const int action_bar = 2131361861;
@@ -1600,8 +1582,8 @@ namespace RCamera
 			// aapt resource value: 0x7f0a0046
 			public const int action_context_bar = 2131361862;
 			
-			// aapt resource value: 0x7f0a0063
-			public const int action_divider = 2131361891;
+			// aapt resource value: 0x7f0a0064
+			public const int action_divider = 2131361892;
 			
 			// aapt resource value: 0x7f0a0002
 			public const int action_menu_divider = 2131361794;
@@ -1636,20 +1618,26 @@ namespace RCamera
 			// aapt resource value: 0x7f0a0022
 			public const int bottom = 2131361826;
 			
+			// aapt resource value: 0x7f0a005e
+			public const int btnBack = 2131361886;
+			
+			// aapt resource value: 0x7f0a005f
+			public const int btnCamera = 2131361887;
+			
 			// aapt resource value: 0x7f0a0055
 			public const int btnEmotion = 2131361877;
 			
 			// aapt resource value: 0x7f0a002e
 			public const int buttonPanel = 2131361838;
 			
-			// aapt resource value: 0x7f0a0060
-			public const int cancel_action = 2131361888;
+			// aapt resource value: 0x7f0a0061
+			public const int cancel_action = 2131361889;
 			
 			// aapt resource value: 0x7f0a003c
 			public const int checkbox = 2131361852;
 			
-			// aapt resource value: 0x7f0a0066
-			public const int chronometer = 2131361894;
+			// aapt resource value: 0x7f0a0067
+			public const int chronometer = 2131361895;
 			
 			// aapt resource value: 0x7f0a001e
 			public const int collapseActionView = 2131361822;
@@ -1678,8 +1666,8 @@ namespace RCamera
 			// aapt resource value: 0x7f0a001b
 			public const int end = 2131361819;
 			
-			// aapt resource value: 0x7f0a006b
-			public const int end_padder = 2131361899;
+			// aapt resource value: 0x7f0a006c
+			public const int end_padder = 2131361900;
 			
 			// aapt resource value: 0x7f0a0028
 			public const int expand_activities_button = 2131361832;
@@ -1705,14 +1693,14 @@ namespace RCamera
 			// aapt resource value: 0x7f0a0054
 			public const int imageView = 2131361876;
 			
-			// aapt resource value: 0x7f0a006a
-			public const int info = 2131361898;
+			// aapt resource value: 0x7f0a006b
+			public const int info = 2131361899;
 			
-			// aapt resource value: 0x7f0a0064
-			public const int line1 = 2131361892;
+			// aapt resource value: 0x7f0a0065
+			public const int line1 = 2131361893;
 			
-			// aapt resource value: 0x7f0a0068
-			public const int line3 = 2131361896;
+			// aapt resource value: 0x7f0a0069
+			public const int line3 = 2131361897;
 			
 			// aapt resource value: 0x7f0a0009
 			public const int listMode = 2131361801;
@@ -1720,8 +1708,8 @@ namespace RCamera
 			// aapt resource value: 0x7f0a002b
 			public const int list_item = 2131361835;
 			
-			// aapt resource value: 0x7f0a0062
-			public const int media_actions = 2131361890;
+			// aapt resource value: 0x7f0a0063
+			public const int media_actions = 2131361891;
 			
 			// aapt resource value: 0x7f0a001c
 			public const int middle = 2131361820;
@@ -1822,8 +1810,8 @@ namespace RCamera
 			// aapt resource value: 0x7f0a0018
 			public const int src_over = 2131361816;
 			
-			// aapt resource value: 0x7f0a0061
-			public const int status_bar_latest_event_content = 2131361889;
+			// aapt resource value: 0x7f0a0062
+			public const int status_bar_latest_event_content = 2131361890;
 			
 			// aapt resource value: 0x7f0a003f
 			public const int submenuarrow = 2131361855;
@@ -1834,17 +1822,17 @@ namespace RCamera
 			// aapt resource value: 0x7f0a000b
 			public const int tabMode = 2131361803;
 			
-			// aapt resource value: 0x7f0a0069
-			public const int text = 2131361897;
+			// aapt resource value: 0x7f0a006a
+			public const int text = 2131361898;
 			
-			// aapt resource value: 0x7f0a0067
-			public const int text2 = 2131361895;
+			// aapt resource value: 0x7f0a0068
+			public const int text2 = 2131361896;
 			
 			// aapt resource value: 0x7f0a0037
 			public const int textSpacerNoButtons = 2131361847;
 			
-			// aapt resource value: 0x7f0a0065
-			public const int time = 2131361893;
+			// aapt resource value: 0x7f0a0066
+			public const int time = 2131361894;
 			
 			// aapt resource value: 0x7f0a002d
 			public const int title = 2131361837;
@@ -1861,17 +1849,14 @@ namespace RCamera
 			// aapt resource value: 0x7f0a0059
 			public const int tvAge = 2131361881;
 			
-			// aapt resource value: 0x7f0a005e
-			public const int tvDo = 2131361886;
-			
 			// aapt resource value: 0x7f0a005d
-			public const int tvEmotion = 2131361885;
+			public const int tvDo = 2131361885;
+			
+			// aapt resource value: 0x7f0a005b
+			public const int tvEmotion = 2131361883;
 			
 			// aapt resource value: 0x7f0a0057
 			public const int tvGender = 2131361879;
-			
-			// aapt resource value: 0x7f0a005c
-			public const int tvText = 2131361884;
 			
 			// aapt resource value: 0x7f0a0056
 			public const int tv_1 = 2131361878;
@@ -1882,8 +1867,8 @@ namespace RCamera
 			// aapt resource value: 0x7f0a005a
 			public const int tv_3 = 2131361882;
 			
-			// aapt resource value: 0x7f0a005b
-			public const int tv_4 = 2131361883;
+			// aapt resource value: 0x7f0a005c
+			public const int tv_4 = 2131361884;
 			
 			// aapt resource value: 0x7f0a0008
 			public const int up = 2131361800;
