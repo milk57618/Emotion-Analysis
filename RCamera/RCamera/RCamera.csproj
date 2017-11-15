@@ -118,6 +118,7 @@
     <Compile Include="Helper\EmotionFunction.cs" />
     <Compile Include="Helper\FaceFunction.cs" />
     <Compile Include="CogTask\FaceTask.cs" />
+    <Compile Include="Helper\VisionFunction.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Model\Emotion.cs" />
     <Compile Include="Model\Face.cs" />

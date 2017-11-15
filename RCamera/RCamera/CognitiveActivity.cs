@@ -84,7 +84,7 @@ namespace RCamera
                     bitmapData = stream.ToArray();
                 }
 
-                inputStream1 = new MemoryStream(bitmapData);  //face cognitive에 쓰일 inputStream
+                inputStream1 = new MemoryStream(bitmapData);  //Face cognitive에 쓰일 inputStream
                 inputStream2 = new MemoryStream(bitmapData);  //Emotion cognitive에 쓰일 inputStream
                 inputStream3 = new MemoryStream(bitmapData);  //Vision cognitive에 쓰일 inputStream                    
             }

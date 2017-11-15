@@ -62,12 +62,9 @@ namespace RCamera.CogTask
                         eM.scores.sadness = sc.Sadness;
                         eM.scores.disgust = sc.Disgust;
                         list.Add(eM);
-
                     }
-                   
                     return JsonConvert.SerializeObject(list);
                 }
-
 
                 return null;
             }
@@ -83,19 +80,21 @@ namespace RCamera.CogTask
         /// <param name="result"></param>
         protected override void OnPostExecute(string result)
         {
-            var list = JsonConvert.DeserializeObject<List<EmotionModel>>(result);
-            EmotionModel EMax = new EmotionModel();
-
-            EMax = list[0];
-            foreach (var face in list)
+            if (result!=null)
             {
-                if (EMax.faceRectangle.height * EMax.faceRectangle.width <= face.faceRectangle.height * face.faceRectangle.width)
+                var list = JsonConvert.DeserializeObject<List<EmotionModel>>(result);
+                EmotionModel EMax = new EmotionModel();
+
+                EMax = list[0];
+                foreach (var face in list)
                 {
-                    EMax = face; //제일 큰 얼굴값을 택함
+                    if (EMax.faceRectangle.height * EMax.faceRectangle.width <= face.faceRectangle.height * face.faceRectangle.width)
+                    {
+                        EMax = face; //제일 큰 얼굴값을 택함
+                    }
                 }
-            }
-            
-            cognitiveActivity.tvEmotion.Text = EmotionFunction.GetEmo(EMax);
+                cognitiveActivity.tvEmotion.Text = EmotionFunction.GetEmo(EMax);
+            }           
         }
     }
 }

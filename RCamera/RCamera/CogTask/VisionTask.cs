@@ -7,6 +7,9 @@ using Com.Microsoft.Projectoxford.Vision;
 using GoogleGson;
 using Newtonsoft.Json;
 using RCamera.Model;
+using System.Dynamic;
+using RCamera.Helper;
+using System.Net.Http;
 
 /// <summary>
 /// @author 강수지
@@ -18,8 +21,7 @@ namespace RCamera.CogTask
         private const string VisionKey = "d5b9984f7f4c4bfdbc59428834d08fde";
         public VisionServiceRestClient VisionServiceRestClient = new VisionServiceRestClient(VisionKey);
         private CognitiveActivity cognitiveActivity;
-
-        
+       
         public VisionTask(CognitiveActivity cognitiveActivity)
         {
             this.cognitiveActivity = cognitiveActivity;
@@ -57,17 +59,26 @@ namespace RCamera.CogTask
         /// Show vision Result
         /// </summary>
         /// <param name="result"></param>
-        protected override void OnPostExecute(string result)
+        protected override void OnPostExecuteAsync(string result)
         {            
-            var analysisResult = JsonConvert.DeserializeObject<VisionModel>(result);           
-            StringBuilder strBuilder = new StringBuilder();
+            var analysisResult = JsonConvert.DeserializeObject<VisionModel>(result);
+            String strValue = "";
 
             foreach (var caption in analysisResult.description.captions)
             {
-                strBuilder.Append(caption.text);
+                strValue+=caption.text;
             }
+            //영문값을 한국어로 번역하는 기능
+            VisionTranslateAsync(strValue);
+        }
 
-            cognitiveActivity.tvDo.Text = strBuilder.ToString();
+        public async void VisionTranslateAsync(string str)
+        {
+            Web web = new Web();
+            HttpResponseMessage respon = web.visionString(str);
+            string rs = await respon.Content.ReadAsStringAsync();
+            var value = JsonConvert.DeserializeObject<string>(rs);
+            cognitiveActivity.tvDo.Text = value;
         }
     }
 }
