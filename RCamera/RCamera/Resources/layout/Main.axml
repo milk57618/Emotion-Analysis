@@ -2,10 +2,31 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:orientation="vertical"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+    <ImageView
+        android:id="@+id/Logo"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="95dp"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:background="@drawable/RCam" />
     <Button
         android:id="@+id/btnCamera"
-        android:text="Emotion"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:background="@drawable/res33"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="300dp"
+        android:layout_height="104dp"
+        android:textSize="30dp"
+        android:textColor="#3c3c44" />
+    <Button
+        android:id="@+id/btnText"
+        android:background="@drawable/res2"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:textSize="30dp"
+        android:textColor="#3c3c44" />
 </LinearLayout>

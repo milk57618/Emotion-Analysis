@@ -16,7 +16,7 @@ namespace RCamera.CogTask
 {
     public class FaceTask : AsyncTask<Stream, string, string>
     {
-        private const string FaceKey = "cf34900a1b6549e1882d0d9bd83dc795";
+        private const string FaceKey = "098184e62f0e47fcb4dcb8706d15240b";
        
         public FaceServiceRestClient faceServiceClient;
         private CognitiveActivity cognitiveActivity;
@@ -69,12 +69,24 @@ namespace RCamera.CogTask
             if (result != null)
             {
                 var faces = JsonConvert.DeserializeObject<List<FaceModel>>(result);
-                var bitmap = FaceFunction.DrawRectanglesOnBitmap(cognitiveActivity.mBitmap, faces);
+                if (faces != null)
+                {
+                    var bitmap = FaceFunction.DrawRectanglesOnBitmap(cognitiveActivity.mBitmap, faces);
+                    FaceFunction.setImageOutput(faces, cognitiveActivity);
+                    cognitiveActivity.imageView.SetImageBitmap(bitmap);
 
-                FaceFunction.setImageOutput(faces, cognitiveActivity);
-
-                cognitiveActivity.imageView.SetImageBitmap(bitmap);
-            }            
+                    new EmotionTask(cognitiveActivity).Execute(cognitiveActivity.inputStream1);  //Emotion Task 시작점                    
+                }
+                else
+                {
+                    new VisionTask(cognitiveActivity).Execute(cognitiveActivity.inputStream3);  //Vision Task 시작점
+                }
+               
+            }
+            else
+            {
+                new VisionTask(cognitiveActivity).Execute(cognitiveActivity.inputStream3);  //Vision Task 시작점
+            }           
         }      
     }         
 }

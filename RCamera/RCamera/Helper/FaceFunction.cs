@@ -47,29 +47,32 @@ namespace RCamera.Helper
             {
                 FM.Add(faceTemp);
             }
-
-            FaceModel faceMax = new FaceModel();
-            faceMax = FM[0];
-            foreach (var face in FM)
+            if (FM.Count > 0)
             {
-                if (faceMax.faceRectangle.height * faceMax.faceRectangle.width <= face.faceRectangle.height * face.faceRectangle.width)
+                FaceModel faceMax = new FaceModel();
+                faceMax = FM[0];
+                foreach (var face in FM)
                 {
-                    faceMax = face; //제일 큰 얼굴값을 택함
+                    if (faceMax.faceRectangle.height * faceMax.faceRectangle.width <= face.faceRectangle.height * face.faceRectangle.width)
+                    {
+                        faceMax = face; //제일 큰 얼굴값을 택함
+                    }
                 }
+
+                string gender;
+                if (faceMax.faceAttributes.Gender == "female" || faceMax.faceAttributes.Gender == "Female" || faceMax.faceAttributes.Gender == "FEMALE")
+                {
+                    gender = "여성";
+                }
+                else
+                {
+                    gender = "남성";
+                }
+                int age = (int)faceMax.faceAttributes.Age;
+                cognitiveActivity.textValue +="   약 " +(age.ToString()) + "세인 " + gender + "이 ";                
             }
 
-            string gender="";
-            if (faceMax.faceAttributes.Gender == "female" || faceMax.faceAttributes.Gender == "Female" || faceMax.faceAttributes.Gender == "FEMALE")
-            {
-                gender = "여자";
-            }
-            else
-            {
-                gender = "남자";
-            }
-            int age =(int)faceMax.faceAttributes.Age;
-            cognitiveActivity.tvGender.Text =gender;
-            cognitiveActivity.tvAge.Text = age.ToString();
+           
         }
     }
 }

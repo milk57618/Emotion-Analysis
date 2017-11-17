@@ -14,7 +14,7 @@ namespace RCamera.CogTask
     public class EmotionTask : AsyncTask<Stream, string, string>
     {
         public EmotionServiceRestClient emotionRestClient;
-        private const string EmotionKey = "c0aa6b40408142d0975d2aec77914c61";
+        private const string EmotionKey = "f8cb6813da324f22a239d928677f5e47";
         private CognitiveActivity cognitiveActivity;
 
         
@@ -84,17 +84,23 @@ namespace RCamera.CogTask
             {
                 var list = JsonConvert.DeserializeObject<List<EmotionModel>>(result);
                 EmotionModel EMax = new EmotionModel();
-
-                EMax = list[0];
-                foreach (var face in list)
+                if (list.Count>0)
                 {
-                    if (EMax.faceRectangle.height * EMax.faceRectangle.width <= face.faceRectangle.height * face.faceRectangle.width)
+                    EMax = list[0];
+                    foreach (var face in list)
                     {
-                        EMax = face; //제일 큰 얼굴값을 택함
+                        if (EMax.faceRectangle.height * EMax.faceRectangle.width <= face.faceRectangle.height * face.faceRectangle.width)
+                        {
+                            EMax = face; //제일 큰 얼굴값을 택함
+                        }
                     }
+                    string tmp = EmotionFunction.GetEmo(EMax);
+                    cognitiveActivity.textValue += tmp;
+                    cognitiveActivity.tvText.Text = cognitiveActivity.textValue;
                 }
-                cognitiveActivity.tvEmotion.Text = EmotionFunction.GetEmo(EMax);
-            }           
+                
+            }
+            
         }
     }
 }

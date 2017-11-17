@@ -21,14 +21,12 @@ namespace RCamera
     {
         public ImageView imageView;
         public Bitmap mBitmap;
-        public TextView tvAge;
-        public TextView tvGender;
-        public TextView tvEmotion;
-        public TextView tvDo;
+        public TextView tvText;
         public MainActivity mainActivity;
         public MemoryStream inputStream1;
         public MemoryStream inputStream2;
         public MemoryStream inputStream3;
+        public String textValue;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -36,30 +34,30 @@ namespace RCamera
             SetContentView(Resource.Layout.ImageOutput);
 
             //각각의 UI value
-            var btnEmotion = FindViewById<Button>(Resource.Id.btnEmotion);
+            textValue = "";
             imageView = FindViewById<ImageView>(Resource.Id.imageView);
-            tvAge = FindViewById<TextView>(Resource.Id.tvAge);  //나이 추정값 
-            tvGender = FindViewById<TextView>(Resource.Id.tvGender); //성별 추정값
-            tvEmotion = FindViewById<TextView>(Resource.Id.tvEmotion);  //감정 추정값(가장 높은 감정)
-            tvDo = FindViewById<TextView>(Resource.Id.tvDo);  //현재 하고있는 동작 or 상황
+            tvText = FindViewById<TextView>(Resource.Id.tvValue);
             var btnBack = FindViewById<Button>(Resource.Id.btnBack);
+            var btnReplay = FindViewById<Button>(Resource.Id.btnReplay);
 
             //카메라 키는 기능
             Intent intent = new Intent(MediaStore.ActionImageCapture);
             StartActivityForResult(intent, 0);
+            
 
-            btnEmotion.Click += delegate
+            btnReplay.Click += delegate
             {
                 if (mBitmap != null)
                 {
-                    new EmotionTask(this).Execute(inputStream1);  //Emotion Task 시작점
-                    new FaceTask(this).Execute(inputStream2);  //Face Task 시작점
-                    new VisionTask(this).Execute(inputStream3);  //Vision Task 시작점
+                    new FaceTask(this).Execute(inputStream2);  //Face Task 시작점       
+                    
                 }                
             };
 
             btnBack.Click += delegate
             {
+                //textView 초기화하기
+                tvText.Text = "";
                 StartActivity(typeof(MainActivity));
             };
         }
@@ -86,7 +84,8 @@ namespace RCamera
 
                 inputStream1 = new MemoryStream(bitmapData);  //Face cognitive에 쓰일 inputStream
                 inputStream2 = new MemoryStream(bitmapData);  //Emotion cognitive에 쓰일 inputStream
-                inputStream3 = new MemoryStream(bitmapData);  //Vision cognitive에 쓰일 inputStream                    
+                inputStream3 = new MemoryStream(bitmapData);  //Vision cognitive에 쓰일 inputStream
+                
             }
             
         }

@@ -16,15 +16,16 @@ namespace RCamera.Helper
 {
     public class Web
     {        
-        public HttpResponseMessage visionString(String temp)
+        public HttpResponseMessage visionString(string temp)
         {
             var client = new HttpClient();
-            string url = $"https://azurercamera.azurewebsites.net/api/AzureHttp?code=dmZuH7cMgJT1NxM1WaJGr0ahB5OI1qtiaGpKRH/6HEHU4dbnKWz4og==";
+            string url = $"https://transazure.azurewebsites.net/api/suzi?code=voyMSLnIjuEMCWtsL8v8pShabMytT7Sw8841oX/eXb3LMNOZesI8Sg==";
             dynamic dynamicJson = new ExpandoObject();
             dynamicJson.name = temp;
             string json = Newtonsoft.Json.JsonConvert.SerializeObject(dynamicJson);
             HttpResponseMessage result = client.PostAsync(url, new StringContent(json, Encoding.UTF8, "application/json")).Result;
 
+            int b = 0;
             return result;
         }       
     }

@@ -15,12 +15,16 @@ namespace RCamera
     public class MainActivity : AppCompatActivity
     {
         public CognitiveActivity cognitiveActivity;
+        public ImageView logo;
 
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
             
             SetContentView(Resource.Layout.Main);
+            logo = FindViewById<ImageView>(Resource.Id.Logo);
+            var mBitmap = BitmapFactory.DecodeResource(Resources, Resource.Drawable.RCam);
+            logo.SetImageBitmap(mBitmap);
 
             var btnCamera = FindViewById<Button>(Resource.Id.btnCamera);            
             btnCamera.Click += BtnCamera_Click;
