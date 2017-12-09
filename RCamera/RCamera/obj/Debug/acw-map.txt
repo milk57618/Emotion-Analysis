@@ -6,6 +6,10 @@ RCamera.MainActivity, RCamera;md525ecff11cf9568dc168267811841dc5c.MainActivity
 RCamera.MainActivity, RCamera, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md525ecff11cf9568dc168267811841dc5c.MainActivity
 RCamera.MainActivity;md525ecff11cf9568dc168267811841dc5c.MainActivity
 rcamera.MainActivity;md525ecff11cf9568dc168267811841dc5c.MainActivity
+RCamera.TextActivity, RCamera;md525ecff11cf9568dc168267811841dc5c.TextActivity
+RCamera.TextActivity, RCamera, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md525ecff11cf9568dc168267811841dc5c.TextActivity
+RCamera.TextActivity;md525ecff11cf9568dc168267811841dc5c.TextActivity
+rcamera.TextActivity;md525ecff11cf9568dc168267811841dc5c.TextActivity
 RCamera.CogTask.EmotionTask, RCamera;md5dbbc66a9928d2cd78d3ad151435b212a.EmotionTask
 RCamera.CogTask.EmotionTask, RCamera, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5dbbc66a9928d2cd78d3ad151435b212a.EmotionTask
 RCamera.CogTask.EmotionTask;md5dbbc66a9928d2cd78d3ad151435b212a.EmotionTask
@@ -182,3 +186,47 @@ Android.Support.V7.Widget.ViewStubCompat/IOnInflateListenerImplementor, Xamarin.
 Android.Support.V7.Widget.ViewStubCompat+IOnInflateListenerImplementor, Xamarin.Android.Support.v7.AppCompat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.android.support.v7.widget.ViewStubCompat_OnInflateListenerImplementor
 Android.Support.V7.Widget.ViewStubCompat.IOnInflateListenerImplementor;mono.android.support.v7.widget.ViewStubCompat_OnInflateListenerImplementor
 mono.android.support.v7.widget.ViewStubCompat_OnInflateListenerImplementor;mono.android.support.v7.widget.ViewStubCompat_OnInflateListenerImplementor
+Android.Gms.Common.Apis.GoogleApiClient/IOnConnectionFailedListenerImplementor, Xamarin.GooglePlayServices.Base;mono.com.google.android.gms.common.api.GoogleApiClient_OnConnectionFailedListenerImplementor
+Android.Gms.Common.Apis.GoogleApiClient+IOnConnectionFailedListenerImplementor, Xamarin.GooglePlayServices.Base, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.com.google.android.gms.common.api.GoogleApiClient_OnConnectionFailedListenerImplementor
+Android.Gms.Common.Apis.GoogleApiClient.IOnConnectionFailedListenerImplementor;mono.com.google.android.gms.common.api.GoogleApiClient_OnConnectionFailedListenerImplementor
+mono.com.google.android.gms.common.api.GoogleApiClient_OnConnectionFailedListenerImplementor;mono.com.google.android.gms.common.api.GoogleApiClient_OnConnectionFailedListenerImplementor
+Android.Gms.Common.Apis.GoogleApiClientConnectionCallbacksImpl, Xamarin.GooglePlayServices.Base;md526b7ac14cffc1a788e82c7b73f3add08.GoogleApiClientConnectionCallbacksImpl
+Android.Gms.Common.Apis.GoogleApiClientConnectionCallbacksImpl, Xamarin.GooglePlayServices.Base, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md526b7ac14cffc1a788e82c7b73f3add08.GoogleApiClientConnectionCallbacksImpl
+Android.Gms.Common.Apis.GoogleApiClientConnectionCallbacksImpl;md526b7ac14cffc1a788e82c7b73f3add08.GoogleApiClientConnectionCallbacksImpl
+android.gms.common.apis.GoogleApiClientConnectionCallbacksImpl;md526b7ac14cffc1a788e82c7b73f3add08.GoogleApiClientConnectionCallbacksImpl
+Android.Gms.Common.Apis.GoogleApiClientOnConnectionFailedListenerImpl, Xamarin.GooglePlayServices.Base;md526b7ac14cffc1a788e82c7b73f3add08.GoogleApiClientOnConnectionFailedListenerImpl
+Android.Gms.Common.Apis.GoogleApiClientOnConnectionFailedListenerImpl, Xamarin.GooglePlayServices.Base, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md526b7ac14cffc1a788e82c7b73f3add08.GoogleApiClientOnConnectionFailedListenerImpl
+Android.Gms.Common.Apis.GoogleApiClientOnConnectionFailedListenerImpl;md526b7ac14cffc1a788e82c7b73f3add08.GoogleApiClientOnConnectionFailedListenerImpl
+android.gms.common.apis.GoogleApiClientOnConnectionFailedListenerImpl;md526b7ac14cffc1a788e82c7b73f3add08.GoogleApiClientOnConnectionFailedListenerImpl
+Android.Gms.Common.Images.ImageManager/IOnImageLoadedListenerImplementor, Xamarin.GooglePlayServices.Base;mono.com.google.android.gms.common.images.ImageManager_OnImageLoadedListenerImplementor
+Android.Gms.Common.Images.ImageManager+IOnImageLoadedListenerImplementor, Xamarin.GooglePlayServices.Base, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.com.google.android.gms.common.images.ImageManager_OnImageLoadedListenerImplementor
+Android.Gms.Common.Images.ImageManager.IOnImageLoadedListenerImplementor;mono.com.google.android.gms.common.images.ImageManager_OnImageLoadedListenerImplementor
+mono.com.google.android.gms.common.images.ImageManager_OnImageLoadedListenerImplementor;mono.com.google.android.gms.common.images.ImageManager_OnImageLoadedListenerImplementor
+Android.Gms.Common.Apis.ResultCallback`1, Xamarin.GooglePlayServices.Basement;md531f8cc8d4d39b2fa02686ee0eb368905.ResultCallback_1
+Android.Gms.Common.Apis.ResultCallback`1, Xamarin.GooglePlayServices.Basement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md531f8cc8d4d39b2fa02686ee0eb368905.ResultCallback_1
+Android.Gms.Common.Apis.ResultCallback`1;md531f8cc8d4d39b2fa02686ee0eb368905.ResultCallback_1
+android.gms.common.apis.ResultCallback_1;md531f8cc8d4d39b2fa02686ee0eb368905.ResultCallback_1
+Android.Gms.Common.Apis.AwaitableResultCallback`1, Xamarin.GooglePlayServices.Basement;md531f8cc8d4d39b2fa02686ee0eb368905.AwaitableResultCallback_1
+Android.Gms.Common.Apis.AwaitableResultCallback`1, Xamarin.GooglePlayServices.Basement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md531f8cc8d4d39b2fa02686ee0eb368905.AwaitableResultCallback_1
+Android.Gms.Common.Apis.AwaitableResultCallback`1;md531f8cc8d4d39b2fa02686ee0eb368905.AwaitableResultCallback_1
+android.gms.common.apis.AwaitableResultCallback_1;md531f8cc8d4d39b2fa02686ee0eb368905.AwaitableResultCallback_1
+Android.Gms.Security.ProviderInstaller/IProviderInstallListenerImplementor, Xamarin.GooglePlayServices.Basement;mono.com.google.android.gms.security.ProviderInstaller_ProviderInstallListenerImplementor
+Android.Gms.Security.ProviderInstaller+IProviderInstallListenerImplementor, Xamarin.GooglePlayServices.Basement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.com.google.android.gms.security.ProviderInstaller_ProviderInstallListenerImplementor
+Android.Gms.Security.ProviderInstaller.IProviderInstallListenerImplementor;mono.com.google.android.gms.security.ProviderInstaller_ProviderInstallListenerImplementor
+mono.com.google.android.gms.security.ProviderInstaller_ProviderInstallListenerImplementor;mono.com.google.android.gms.security.ProviderInstaller_ProviderInstallListenerImplementor
+Android.Gms.Extensions.AwaitableTaskCompleteListener`1, Xamarin.GooglePlayServices.Tasks;md5048a04284979bff265231e98628579ce.AwaitableTaskCompleteListener_1
+Android.Gms.Extensions.AwaitableTaskCompleteListener`1, Xamarin.GooglePlayServices.Tasks, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5048a04284979bff265231e98628579ce.AwaitableTaskCompleteListener_1
+Android.Gms.Extensions.AwaitableTaskCompleteListener`1;md5048a04284979bff265231e98628579ce.AwaitableTaskCompleteListener_1
+android.gms.extensions.AwaitableTaskCompleteListener_1;md5048a04284979bff265231e98628579ce.AwaitableTaskCompleteListener_1
+Android.Gms.Tasks.IOnCompleteListenerImplementor, Xamarin.GooglePlayServices.Tasks;mono.com.google.android.gms.tasks.OnCompleteListenerImplementor
+Android.Gms.Tasks.IOnCompleteListenerImplementor, Xamarin.GooglePlayServices.Tasks, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.com.google.android.gms.tasks.OnCompleteListenerImplementor
+Android.Gms.Tasks.IOnCompleteListenerImplementor;mono.com.google.android.gms.tasks.OnCompleteListenerImplementor
+mono.com.google.android.gms.tasks.OnCompleteListenerImplementor;mono.com.google.android.gms.tasks.OnCompleteListenerImplementor
+Android.Gms.Tasks.IOnFailureListenerImplementor, Xamarin.GooglePlayServices.Tasks;mono.com.google.android.gms.tasks.OnFailureListenerImplementor
+Android.Gms.Tasks.IOnFailureListenerImplementor, Xamarin.GooglePlayServices.Tasks, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.com.google.android.gms.tasks.OnFailureListenerImplementor
+Android.Gms.Tasks.IOnFailureListenerImplementor;mono.com.google.android.gms.tasks.OnFailureListenerImplementor
+mono.com.google.android.gms.tasks.OnFailureListenerImplementor;mono.com.google.android.gms.tasks.OnFailureListenerImplementor
+Android.Gms.Tasks.IOnSuccessListenerImplementor, Xamarin.GooglePlayServices.Tasks;mono.com.google.android.gms.tasks.OnSuccessListenerImplementor
+Android.Gms.Tasks.IOnSuccessListenerImplementor, Xamarin.GooglePlayServices.Tasks, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.com.google.android.gms.tasks.OnSuccessListenerImplementor
+Android.Gms.Tasks.IOnSuccessListenerImplementor;mono.com.google.android.gms.tasks.OnSuccessListenerImplementor
+mono.com.google.android.gms.tasks.OnSuccessListenerImplementor;mono.com.google.android.gms.tasks.OnSuccessListenerImplementor

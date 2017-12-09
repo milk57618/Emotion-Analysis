@@ -20,10 +20,22 @@ namespace RCamera.CogTask
        
         public FaceServiceRestClient faceServiceClient;
         private CognitiveActivity cognitiveActivity;
+        private ProgressDialog pd = new ProgressDialog(Application.Context);
 
         public FaceTask(CognitiveActivity cognitiveActivity)
         {
             this.cognitiveActivity = cognitiveActivity;
+        }
+
+        protected override void OnPreExecute()
+        {
+            pd.Window.SetType(Android.Views.WindowManagerTypes.SystemAlert);
+            pd.Show();
+        }
+
+        protected override void OnProgressUpdate(params string[] values)
+        {
+            pd.SetMessage(values[0]);
         }
 
         /// <summary>
@@ -34,9 +46,10 @@ namespace RCamera.CogTask
         protected override string RunInBackground(params Stream[] @params)
         {
             try
-            { 
+            {
+                PublishProgress("얼굴 인식 중..");
                 faceServiceClient = new FaceServiceRestClient(FaceKey);
-
+                
                 //Get Congnitive API result
                 Com.Microsoft.Projectoxford.Face.Contract.Face[] result = faceServiceClient.Detect(@params[0],
                     true, //return FaceId
@@ -48,6 +61,7 @@ namespace RCamera.CogTask
               
                 if (result != null)
                 {
+                    PublishProgress($" {result.Length} 명의 얼굴이 인식되었습니다.");
                     //parse json to String
                     Gson gson = new Gson();
                     return gson.ToJson(result);
@@ -66,25 +80,29 @@ namespace RCamera.CogTask
         /// <param name="result"></param>
         protected override void OnPostExecute(string result)
         {
+            pd.Dismiss();
             if (result != null)
             {
                 var faces = JsonConvert.DeserializeObject<List<FaceModel>>(result);
-                if (faces != null)
+                if (faces.Count >= 1)
                 {
                     var bitmap = FaceFunction.DrawRectanglesOnBitmap(cognitiveActivity.mBitmap, faces);
                     FaceFunction.setImageOutput(faces, cognitiveActivity);
                     cognitiveActivity.imageView.SetImageBitmap(bitmap);
-
+                    
+                    //감정 인식 스레드 실행
                     new EmotionTask(cognitiveActivity).Execute(cognitiveActivity.inputStream1);  //Emotion Task 시작점                    
                 }
                 else
                 {
+                    //상황 인식 스레드 실행
                     new VisionTask(cognitiveActivity).Execute(cognitiveActivity.inputStream3);  //Vision Task 시작점
                 }
                
             }
             else
             {
+                //상황 인식 스레드 실행
                 new VisionTask(cognitiveActivity).Execute(cognitiveActivity.inputStream3);  //Vision Task 시작점
             }           
         }      

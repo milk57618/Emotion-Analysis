@@ -37,3 +37,13 @@ C:\Users\milk5\Desktop\RCamera\RCamera\bin\Debug\System.Net.Http.Primitives.xml
 C:\Users\milk5\Desktop\RCamera\RCamera\bin\Debug\RCamera.dll.mdb
 C:\Users\milk5\Desktop\RCamera\RCamera\obj\Debug\android\assets\RCamera.dll.mdb
 C:\Users\milk5\Desktop\RCamera\RCamera\obj\Debug\res\drawable\rcam.png
+C:\Users\milk5\Desktop\RCamera\RCamera\obj\Debug\res\drawable\res2.png
+C:\Users\milk5\Desktop\RCamera\RCamera\obj\Debug\res\drawable\res33.png
+C:\Users\milk5\Desktop\RCamera\RCamera\obj\Debug\res\drawable\replaybutton.png
+C:\Users\milk5\Desktop\RCamera\RCamera\obj\Debug\res\drawable\backbutton.png
+C:\Users\milk5\Desktop\RCamera\RCamera\bin\Debug\Xamarin.Android.Support.v4.dll
+C:\Users\milk5\Desktop\RCamera\RCamera\bin\Debug\Xamarin.GooglePlayServices.Base.dll
+C:\Users\milk5\Desktop\RCamera\RCamera\bin\Debug\Xamarin.GooglePlayServices.Basement.dll
+C:\Users\milk5\Desktop\RCamera\RCamera\bin\Debug\Xamarin.GooglePlayServices.Tasks.dll
+C:\Users\milk5\Desktop\RCamera\RCamera\bin\Debug\Xamarin.GooglePlayServices.Vision.dll
+C:\Users\milk5\Desktop\RCamera\RCamera\obj\Debug\res\layout\textoutput.xml

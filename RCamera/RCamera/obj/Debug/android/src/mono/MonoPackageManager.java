@@ -115,8 +115,13 @@ class MonoPackageManager_Resources {
 		"Xamarin.Android.Support.Core.Utils.dll",
 		"Xamarin.Android.Support.Fragment.dll",
 		"Xamarin.Android.Support.Media.Compat.dll",
+		"Xamarin.Android.Support.v4.dll",
 		"Xamarin.Android.Support.v7.AppCompat.dll",
 		"Xamarin.Android.Support.Vector.Drawable.dll",
+		"Xamarin.GooglePlayServices.Base.dll",
+		"Xamarin.GooglePlayServices.Basement.dll",
+		"Xamarin.GooglePlayServices.Tasks.dll",
+		"Xamarin.GooglePlayServices.Vision.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};

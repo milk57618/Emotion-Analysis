@@ -16,6 +16,11 @@ namespace RCamera.Helper
 {
     public class Web
     {        
+        /// <summary>
+        /// Web에 영문 string 값 전송하고 번역한 string을 받아옴
+        /// </summary>
+        /// <param name="temp"></param>
+        /// <returns></returns>
         public HttpResponseMessage visionString(string temp)
         {
             var client = new HttpClient();
@@ -25,7 +30,6 @@ namespace RCamera.Helper
             string json = Newtonsoft.Json.JsonConvert.SerializeObject(dynamicJson);
             HttpResponseMessage result = client.PostAsync(url, new StringContent(json, Encoding.UTF8, "application/json")).Result;
 
-            int b = 0;
             return result;
         }       
     }

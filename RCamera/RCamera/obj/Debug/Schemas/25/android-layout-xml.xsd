@@ -5,7 +5,7 @@
   <xs:import schemaLocation="schemas.android.com.tools.xsd" namespace="http://schemas.android.com/tools" />
   <xs:annotation>
     <xs:documentation>v25</xs:documentation>
-    <xs:documentation>2017-11-17 오후 5:12:55</xs:documentation>
+    <xs:documentation>2017-12-09 오후 7:08:05</xs:documentation>
   </xs:annotation>
   <xs:group name="any-view">
     <xs:choice>
@@ -82,6 +82,7 @@
       <xs:element ref="RadioGroup" />
       <xs:element ref="TextSwitcher" />
       <xs:element ref="fragment" />
+      <xs:element ref="com.google.android.gms.common.SignInButton" />
       <xs:element ref="android.support.v7.widget.ViewStubCompat" />
       <xs:element ref="android.support.v7.widget.Toolbar" />
       <xs:element ref="android.support.v7.widget.SwitchCompat" />
@@ -1435,6 +1436,20 @@
     <xs:attribute ref="android:layout_marginStart" />
     <xs:attribute ref="android:layout_marginEnd" />
     <xs:attribute ref="android:style" />
+  </xs:complexType>
+  <xs:element name="com.google.android.gms.common.SignInButton" type="com.google.android.gms.common.SignInButton">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: Android.Gms.Common.SignInButton</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="com.google.android.gms.common.SignInButton">
+    <xs:complexContent mixed="false">
+      <xs:extension base="FrameLayout">
+        <xs:attribute ref="app:buttonSize" />
+        <xs:attribute ref="app:colorScheme" />
+        <xs:attribute ref="app:scopeUris" />
+      </xs:extension>
+    </xs:complexContent>
   </xs:complexType>
   <xs:element name="android.support.v7.widget.ViewStubCompat" type="android.support.v7.widget.ViewStubCompat">
     <xs:annotation>

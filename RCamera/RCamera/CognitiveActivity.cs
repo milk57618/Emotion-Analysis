@@ -13,11 +13,13 @@ using Android.Graphics;
 using System.IO;
 using Android.Provider;
 using RCamera.CogTask;
+using Android.Support.V7.App;
+using Android.Speech.Tts;
 
 namespace RCamera
 {
-    [Activity(Label = "CognitiveActivity")]
-    public class CognitiveActivity : Activity
+    [Activity(Label = "CognitiveActivity", Theme = "@style/Theme.AppCompat.Light.NoActionBar")]
+    public class CognitiveActivity : AppCompatActivity, TextToSpeech.IOnInitListener
     {
         public ImageView imageView;
         public Bitmap mBitmap;
@@ -27,6 +29,7 @@ namespace RCamera
         public MemoryStream inputStream2;
         public MemoryStream inputStream3;
         public String textValue;
+        private TextToSpeech _speaker;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -40,20 +43,17 @@ namespace RCamera
             var btnBack = FindViewById<Button>(Resource.Id.btnBack);
             var btnReplay = FindViewById<Button>(Resource.Id.btnReplay);
 
-            //카메라 키는 기능
+            //카메라 켜는 기능
             Intent intent = new Intent(MediaStore.ActionImageCapture);
-            StartActivityForResult(intent, 0);
-            
+            StartActivityForResult(intent, 0);           
 
+            //음성 다시 피드백
             btnReplay.Click += delegate
             {
-                if (mBitmap != null)
-                {
-                    new FaceTask(this).Execute(inputStream2);  //Face Task 시작점       
-                    
-                }                
+                Speak(tvText.Text);          
             };
 
+            //main화면으로 돌아가기
             btnBack.Click += delegate
             {
                 //textView 초기화하기
@@ -85,9 +85,37 @@ namespace RCamera
                 inputStream1 = new MemoryStream(bitmapData);  //Face cognitive에 쓰일 inputStream
                 inputStream2 = new MemoryStream(bitmapData);  //Emotion cognitive에 쓰일 inputStream
                 inputStream3 = new MemoryStream(bitmapData);  //Vision cognitive에 쓰일 inputStream
-                
+
+                new FaceTask(this).Execute(inputStream2);  //Face Task 시작점   
             }
-            
+           
+        }
+        /// <summary>
+        /// 텍스트 값 음성으로 내보내기
+        /// </summary>
+        /// <param name="text"></param>
+        public void Speak(string text)
+        {
+            if (_speaker == null)
+            {
+                _speaker = new TextToSpeech(Application.Context, this);
+            }
+            else
+            {
+                _speaker.Speak(text, QueueMode.Add, null, null);
+            }
+        }
+
+        /// <summary>
+        /// speak 기능 초기화
+        /// </summary>
+        /// <param name="operationResult"></param>
+        public void OnInit(OperationResult operationResult)
+        {
+            if (operationResult.Equals(OperationResult.Success))
+            {
+                _speaker.Speak(tvText.Text, QueueMode.Flush, null, null);
+            }
         }
     }
 }

@@ -26,10 +26,28 @@ namespace RCamera
             var mBitmap = BitmapFactory.DecodeResource(Resources, Resource.Drawable.RCam);
             logo.SetImageBitmap(mBitmap);
 
-            var btnCamera = FindViewById<Button>(Resource.Id.btnCamera);            
+            var btnCamera = FindViewById<Button>(Resource.Id.btnCamera);
+            var btnText = FindViewById<Button>(Resource.Id.btnText);
             btnCamera.Click += BtnCamera_Click;
+            btnText.Click += BtnText_Click;
         }
 
+        /// <summary>
+        /// TextOutput 창으로 이동
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void BtnText_Click(object sender, EventArgs e)
+        {
+            var intent = new Intent(this, typeof(TextActivity));
+            StartActivity(intent);
+        }
+
+        /// <summary>
+        /// ImageOutput 창으로 이동
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void BtnCamera_Click(object sender, EventArgs e)
         {
             var intent = new Intent(this, typeof(CognitiveActivity));

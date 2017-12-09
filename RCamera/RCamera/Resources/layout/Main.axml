@@ -7,14 +7,14 @@
     <ImageView
         android:id="@+id/Logo"
         android:layout_marginTop="70dp"
-        android:layout_marginLeft="95dp"
+        android:layout_gravity="center_horizontal"
         android:layout_width="170dp"
         android:layout_height="170dp"
         android:background="@drawable/RCam" />
     <Button
         android:id="@+id/btnCamera"
         android:background="@drawable/res33"
-        android:layout_marginLeft="42dp"
+        android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
         android:layout_width="300dp"
         android:layout_height="104dp"
@@ -23,7 +23,7 @@
     <Button
         android:id="@+id/btnText"
         android:background="@drawable/res2"
-        android:layout_marginLeft="40dp"
+        android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
         android:layout_width="300dp"
         android:layout_height="100dp"

@@ -2,11 +2,13 @@
   
  Install Nuget Package
   
- -Xamarin.Microsoft.Cognitive.Emotion
+ -Microsoft.Projectoxford.Emotion
+ -Microsoft.Projectoxford.Vision
  -Xamarin.Microsoft.Cognitive.Face
- -Xamarin.Microsoft.Cognitive.Vision
- -Microsoft.ProjectOxford.Face
  -Newtonsoft.Json
+ -GoogleGson
+ -Xamarin.Android.Support.V7.AppCompat
+ -Xamarin.GooglePlayServices.Vision
 
  Console
  -Install-Package Microsoft.Bcl.Build -Version 1.0.21
@@ -15,16 +17,18 @@
  -android.permission.SYSTEM_ALERT_WINDOW
  -android.permission.INTERNET
  -android.permission.WRITE_SETTINGS
+ -android.permisiion.CAMERA
 
 
  Cognitive API key
- Emotion : c0aa6b40408142d0975d2aec77914c61
- Vision : d5b9984f7f4c4bfdbc59428834d08fde
- Face : cf34900a1b6549e1882d0d9bd83dc795
+ Emotion : f8cb6813da324f22a239d928677f5e47
+ Vision : 4cb1120fba1946e3abf46ddf2916d234
+ Face : 098184e62f0e47fcb4dcb8706d15240b
+ Text : 
 
  Author
- @강수지 - Cognitive API & Azure Function
- @이예리 - Camera Function & storage Image
+ @강수지 - Cognitive API(Face, Emotion, Vision) & Azure Function(Cognitive translate)
+ @이예리 - Camera Function & Text OCR English & Voice feedback
   
  Android Minimum Version 
  -Android 5.0(API 21 - Lollipop)

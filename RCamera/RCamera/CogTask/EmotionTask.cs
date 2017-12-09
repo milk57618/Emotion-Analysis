@@ -5,6 +5,7 @@ using RCamera.Model;
 using Com.Microsoft.Projectoxford.Emotion;
 using System.IO;
 using RCamera.Helper;
+using Android.App;
 
 /// <summary>
 /// @author 강수지
@@ -16,13 +17,24 @@ namespace RCamera.CogTask
         public EmotionServiceRestClient emotionRestClient;
         private const string EmotionKey = "f8cb6813da324f22a239d928677f5e47";
         private CognitiveActivity cognitiveActivity;
+        private ProgressDialog pd = new ProgressDialog(Application.Context);
 
-        
         public EmotionTask(CognitiveActivity cognitiveActivity)
         {
             this.cognitiveActivity = cognitiveActivity;
         }
 
+
+        protected override void OnPreExecute()
+        {
+            pd.Window.SetType(Android.Views.WindowManagerTypes.SystemAlert);
+            pd.Show();
+        }
+
+        protected override void OnProgressUpdate(params string[] values)
+        {
+            pd.SetMessage(values[0]);
+        }
         /// <summary>
         /// Result of Emotion
         /// </summary>
@@ -32,6 +44,7 @@ namespace RCamera.CogTask
         {
             try
             {
+                PublishProgress("감정 분석 중입니다...");
                 emotionRestClient = new EmotionServiceRestClient(EmotionKey);
                 var result = emotionRestClient.RecognizeImage(@params[0]);
                 var list = new List<EmotionModel>();
@@ -41,7 +54,7 @@ namespace RCamera.CogTask
                     foreach (var item in result)
                     {
                         EmotionModel eM = new EmotionModel();
-
+                        
                         //감정분석 API
                         Com.Microsoft.Projectoxford.Emotion.Contract.FaceRectangle faceRect = item.FaceRectangle;
 
@@ -80,6 +93,7 @@ namespace RCamera.CogTask
         /// <param name="result"></param>
         protected override void OnPostExecute(string result)
         {
+            pd.Dismiss();
             if (result!=null)
             {
                 var list = JsonConvert.DeserializeObject<List<EmotionModel>>(result);
@@ -97,6 +111,7 @@ namespace RCamera.CogTask
                     string tmp = EmotionFunction.GetEmo(EMax);
                     cognitiveActivity.textValue += tmp;
                     cognitiveActivity.tvText.Text = cognitiveActivity.textValue;
+                    cognitiveActivity.Speak(cognitiveActivity.tvText.Text);                    
                 }
                 
             }

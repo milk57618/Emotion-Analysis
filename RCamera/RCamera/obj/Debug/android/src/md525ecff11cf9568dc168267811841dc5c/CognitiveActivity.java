@@ -2,9 +2,10 @@ package md525ecff11cf9568dc168267811841dc5c;
 
 
 public class CognitiveActivity
-	extends android.app.Activity
+	extends android.support.v7.app.AppCompatActivity
 	implements
-		mono.android.IGCUserPeer
+		mono.android.IGCUserPeer,
+		android.speech.tts.TextToSpeech.OnInitListener
 {
 /** @hide */
 	public static final String __md_methods;
@@ -12,6 +13,7 @@ public class CognitiveActivity
 		__md_methods = 
 			"n_onCreate:(Landroid/os/Bundle;)V:GetOnCreate_Landroid_os_Bundle_Handler\n" +
 			"n_onActivityResult:(IILandroid/content/Intent;)V:GetOnActivityResult_IILandroid_content_Intent_Handler\n" +
+			"n_onInit:(I)V:GetOnInit_IHandler:Android.Speech.Tts.TextToSpeech/IOnInitListenerInvoker, Mono.Android, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null\n" +
 			"";
 		mono.android.Runtime.register ("RCamera.CognitiveActivity, RCamera, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", CognitiveActivity.class, __md_methods);
 	}
@@ -39,6 +41,14 @@ public class CognitiveActivity
 	}
 
 	private native void n_onActivityResult (int p0, int p1, android.content.Intent p2);
+
+
+	public void onInit (int p0)
+	{
+		n_onInit (p0);
+	}
+
+	private native void n_onInit (int p0);
 
 	private java.util.ArrayList refList;
 	public void monodroidAddReference (java.lang.Object obj)

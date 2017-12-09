@@ -21,7 +21,7 @@ namespace RCamera.CogTask
 {
     public class VisionTask : AsyncTask<Stream, string, string>
     {
-        private const string VisionKey = "9f962cdbfd2549808b1474e61b2cbae4";
+        private const string VisionKey = "4cb1120fba1946e3abf46ddf2916d234";
         public VisionServiceRestClient VisionServiceRestClient = new VisionServiceRestClient(VisionKey);
         private CognitiveActivity cognitiveActivity;
         private ProgressDialog pd = new ProgressDialog(Application.Context);
@@ -41,6 +41,7 @@ namespace RCamera.CogTask
         {
             pd.SetMessage(values[0]);
         }
+
         /// <summary>
         /// Vision Detection Function
         /// </summary>
@@ -50,9 +51,9 @@ namespace RCamera.CogTask
         {
             try
             {
+                PublishProgress("상황 인식 중..");
                 string[] features = { "Description" };
-                string[] details = { };
-                PublishProgress("잠시만 기다려주세요. 상황 인식 중입니다.");
+                string[] details = { };               
                 AnalysisResult result = VisionServiceRestClient.AnalyzeImage(@params[0], features, details);               
                 if (result != null)
                 {
@@ -75,7 +76,6 @@ namespace RCamera.CogTask
         {
             if (result != null)
             {
-
                 var analysisResult = JsonConvert.DeserializeObject<VisionModel>(result);
                 if (analysisResult != null)
                 {
@@ -85,33 +85,60 @@ namespace RCamera.CogTask
                     {
                         strValue += caption.text;
                     }
+                    
                     //영문값을 한국어로 번역하는 기능
-                    VisionTranslateAsync(strValue);
-                    pd.Dismiss();
+                    VisionTranslateAsync(strValue);                    
                 }
                 else
                 {
                     cognitiveActivity.tvText.Text = "번역할 수 없습니다.";
+                    cognitiveActivity.Speak(cognitiveActivity.tvText.Text);
+                    pd.Dismiss();
                 }
             }
             else
             {
                 cognitiveActivity.tvText.Text = "번역할 수 없습니다.";
+                cognitiveActivity.Speak(cognitiveActivity.tvText.Text);
+                pd.Dismiss();
             }
         }
 
+        /// <summary>
+        /// 영문 값 번역하는 기능
+        /// </summary>
+        /// <param name="str"></param>
         public async void VisionTranslateAsync(string str)
         {
+            PublishProgress("번역 중..");
+
+            //Azure function 으로 string 값을 보냄
             Web web = new Web();
             HttpResponseMessage respon = web.visionString(str);
-            string rs = await respon.Content.ReadAsStringAsync();
-            int b = 0;
-            //string값 잘라내기
-            int i1 = rs.IndexOf(">");
-            int i2 = rs.LastIndexOf("<");
-
-            rs = rs.Substring(i1 + 1, i2 - i1 - 1);
-            cognitiveActivity.tvText.Text = rs;                       
+            
+            if (respon != null)
+            {
+                string rs = await respon.Content.ReadAsStringAsync();                
+                if (rs.Contains("<html>"))
+                {
+                    cognitiveActivity.tvText.Text = "  " + str;
+                }
+                else
+                {
+                    //string값 잘라내기
+                    int i1 = rs.IndexOf(">");
+                    int i2 = rs.LastIndexOf("<");
+                    rs = rs.Substring(i1 + 1, i2 - i1 - 1);
+                    cognitiveActivity.tvText.Text = "  " + rs;
+                }                
+            }
+            else
+            {
+                cognitiveActivity.tvText.Text = "  " + str;
+            }           
+            pd.Dismiss();
+            //Text 값 음성 피드백
+            cognitiveActivity.Speak(cognitiveActivity.tvText.Text);            
         }
 
     }
